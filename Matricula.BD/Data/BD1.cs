@@ -13,6 +13,7 @@ namespace Matricula.BD.Data
 
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Especialidad> Especialidades { get; set; }
+        public DbSet<Entidades.Matricula> Matriculas { get; set; }
         public BD1(DbContextOptions options) : base(options)
         {
         }
