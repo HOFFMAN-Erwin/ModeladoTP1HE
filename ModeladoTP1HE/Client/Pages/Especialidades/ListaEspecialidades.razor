@@ -1,0 +1,33 @@
+﻿@page "/Especialidades"
+<h3>Lista de Especialidades</h3>
+<p> Hola </p>
+<a href="fetchdata"> fetchdata</a>
+
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Especialidad</th>
+    </tr>
+    
+    @if(especialidades == null)
+    {
+        <tr>Cargando...</tr>
+    }
+    else if (especialidades.Count == 0)
+    {
+            <tr>No existen datos</tr>
+    }
+    else{
+        @foreach(var item in especialidades){
+            <tr>
+                <td>@item.Codigo</td>
+                <td>@item.NomEspecialidad</td>
+            </tr>
+        }
+    }
+
+</table>
+@code {
+    List<Especialidad> especialidades;
+
+}

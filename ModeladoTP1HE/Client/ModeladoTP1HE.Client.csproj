@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Matricula.BD\Matricula.BD.csproj" />
     <ProjectReference Include="..\Shared\ModeladoTP1HE.Shared.csproj" />
   </ItemGroup>
 
